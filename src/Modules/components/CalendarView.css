@@ -1,0 +1,21 @@
+.calendar-view-container {
+    margin: 20px;
+}
+
+.calendar-container {
+    margin-bottom: 20px;
+}
+
+.orders-for-date {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.orders-for-date ul {
+    list-style: none;
+    padding: 0;
+}
+
+.orders-for-date li {
+    margin-bottom: 5px;
+}
