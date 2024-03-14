@@ -15,7 +15,7 @@ const ordersData = [
     { id: 4, customer: 'Penchal Rddy', date: '2024-03-14', status: 'shipping',delivery_date:'2024-03-18' },
     { id: 5, customer: 'Ramya', date: '2024-03-12', status: 'ordered',delivery_date:'2024-03-19' },
     { id: 6, customer: 'Apurupa', date: '2024-03-11', status: 'shipping',delivery_date:'2024-03-18' },
-    { id: 7, customer: 'Chandrika', date: '2024-03-10', status: 'ordered',delivery_date:'2024-03-20' },
+    { id: 7, customer: 'Chandrika', date: '2024-03-10', status: 'ordered',delivery_date:'2024-03-22' },
 
     // Add more orders here
 ];
