@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
 import './OrderList.css';
-import {Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const OrdersManagement = ({ orders, viewOrderDetails,addOrder, updateOrderStatus, deleteOrder }) => {
 
     const [newOrder, setNewOrder] = useState({ id:0,
         customer: '',
         date: '',
-        status: ''
+        status: '',
+        delivery_date:''
     });
     const [editId, setEditId] = useState(null);
     const [isEditing, setIsEditing] = useState(false);
@@ -22,7 +23,8 @@ const OrdersManagement = ({ orders, viewOrderDetails,addOrder, updateOrderStatus
         setNewOrder({ id:0,
             customer: '',
             date: '',
-            status: ''
+            status: '',
+            delivery_date:''
         });
         setEditId(null);
         setIsEditing(false);
@@ -48,17 +50,22 @@ const OrdersManagement = ({ orders, viewOrderDetails,addOrder, updateOrderStatus
             </nav>
         </div>
         <div>
-            <input type="text" name="customer" value={newOrder.customer} onChange={handleChange} placeholder="customer" required />
-            <input type="date" name="date" value={newOrder.date} onChange={handleChange} placeholder="date"  required />
-            <select value={newOrder.status} name="status" onChange={handleChange}>
+            <label>Customer:</label>
+            <input type="text" name="customer" value={newOrder.customer} onChange={handleChange} placeholder="customer" required />  &nbsp;
+            <label>Order Date:</label>
+            <input type="date" name="date" value={newOrder.date} onChange={handleChange} placeholder="order date"  required /> &nbsp;
+            <label>Status:</label>
+            <select value={newOrder.status} name="status" onChange={handleChange}> &nbsp;
                 <option value="">Select</option>
                 <option value="Ordered">Ordered</option>
                 <option value="Pending">Pending</option>
                 <option value="Shipped">Shipped</option>
                 <option value="Delivered">Delivered</option>
-                <option value="Return">Return</option>
+                <option value="Retuen">Retuen</option>
                 <option value="Cancel">Cancel</option>
-            </select>
+            </select>  &nbsp;
+            <label>Delivery Date:</label>
+            <input type="date" name="delivery_date" value={newOrder.delivery_date} onChange={handleChange} placeholder="Delivery Date"  required />  &nbsp;
             <button className="edit-btn" onClick={handleAddOrder}>{ isEditing ? 'Save' :'Add Order'}</button>
         </div>
         <table className="order-table">
@@ -68,6 +75,7 @@ const OrdersManagement = ({ orders, viewOrderDetails,addOrder, updateOrderStatus
                 <th>Customer Name</th>
                 <th>Order Date</th>
                 <th>Status</th>
+                <th>Delivery Date</th>
             </tr>
             </thead>
             <tbody>
@@ -77,6 +85,7 @@ const OrdersManagement = ({ orders, viewOrderDetails,addOrder, updateOrderStatus
                     <td>{order.customer}</td>
                     <td>{order.date}</td>
                     <td>{order.status}</td>
+                    <td>{order.delivery_date}</td>
                       <td>
                         <button className="edit-btn" onClick={() => handleEdit(order.id)}>Update</button>
                         <button className="delete-btn" onClick={() => deleteOrder(order.id)}>Delete</button>

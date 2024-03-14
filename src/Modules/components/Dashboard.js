@@ -6,7 +6,7 @@ const Dashboard = ({ totalProducts, totalOrders, navigateToProducts, navigateToO
         <div className="dashboard-container">
             <h2>Dashboard</h2>
             <div>
-                <p>Welcome to the ERP System Dashboard. Here you can get an overview of the system's features.</p>
+                <p>Welcome to the ERP System Dashboard.</p>
             </div>
             <div className="summary">
                 <div className="metric">

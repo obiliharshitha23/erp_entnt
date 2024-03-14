@@ -13,7 +13,7 @@ const OrdersCalendarView = ({ orders }) => {
     };
 
     const getOrdersForDate = date => {
-        return orders.filter(order => new Date(order.date).toDateString() === date.toDateString());
+        return orders.filter(order => new Date(order.delivery_date).toDateString() === date.toDateString());
     };
 
     return (
