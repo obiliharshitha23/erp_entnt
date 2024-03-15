@@ -125,13 +125,17 @@ o	 Click on a date to view all orders due for delivery on that day.
 •	In that dashboard page, click on Manage Orders.
 •	After Clicking Manage Orders, It will directly navigate to the Order Management Page.
 ![](images/BacktoDashboard.png)
+
 •	Order Management Page will be open.
 •	In the Order management page, we have details like Order ID, Customer Name, Order date, status, delivery date.
 ![](images/ordermanagement.png)
+
 •	We can  add order by clicking Add Order button
 ![](images/addOrder.png)
+
 .   After adding the order,click on Save button
 ![](images/saveOrder.png)
+
 •	We can update the order details by clicking Update  button
 ![](images/updateOrder.png)
 
@@ -144,17 +148,22 @@ o	 Click on a date to view all orders due for delivery on that day.
 •	Click on Order Calender View
 •	Order calender view is for at which date the particular Order has to be delivered.
 ![](images/ordercalenderview.png)
+
 •	Then the order calendar page will be open.
 ![](images/calenderview.png)
 •	By clicking the date in the calendar, we can see the orders that has to be delivered on that date along with day.
 •	Here,we can see that on March 18,the order has to deliver for the customer-Penchal Reddy with Order ID-4 and also for the customer-Apurupa with Order ID-6.
 •	we can see the status of the particular customer order .whether the order is pending/ordered/shipping/cancel/return/delivered.
 ![](images/ordercalender18.png)
+
 •	Here ,we can the delivery orders on March 19
 ![](images/ordercalender19.png)
+
 Here ,we can the delivery orders on March 21
 ![](images/ordercalender21.png)
+
 Here ,we can the delivery orders on March 22
 ![](images/ordercalender22.png)
+
 •	If you want to go back to order management click on Order Management then Oder management page will be opened.
 ![](images/BacktoOrderMangement.png)
